@@ -92,7 +92,7 @@ These commands create a local Git history and push the project to the empty remo
 4. Open the repository's **Actions** tab and confirm **Deploy EV Insights to GitHub Pages** completes.
 5. Open the URL reported by the deployment job. This repository's expected address is **https://darshilparikh24-beep.github.io/EV-Market-Analysis-Tableau/**.
 
-The Vite configuration reads **GITHUB_REPOSITORY** in GitHub Actions and sets the correct base path automatically. GitHub Pages deployment has not been run from this local workspace.
+The Vite configuration reads **GITHUB_REPOSITORY** in GitHub Actions and sets the correct base path automatically. The published site is live at **https://darshilparikh24-beep.github.io/EV-Market-Analysis-Tableau/**.
 
 ## Configure the repository link
 
