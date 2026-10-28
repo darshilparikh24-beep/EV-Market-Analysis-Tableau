@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111416"/>
+      <stop offset="1" stop-color="#090B0C"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="56" y1="0" x2="703" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7042"/>
+      <stop offset="1" stop-color="#FF9B73"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(288 0 0 172 1012 143)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7042" stop-opacity=".17"/>
+      <stop offset="1" stop-color="#FF7042" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#D8E0D9" fill-opacity=".15"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="18" fill="url(#dots)" opacity=".34"/>
+  <rect width="7" height="300" rx="3.5" fill="url(#accent)"/>
+  <ellipse cx="1012" cy="143" rx="288" ry="172" fill="url(#glow)"/>
+  <rect x="68" y="52" width="42" height="42" rx="11" fill="#FF7042"/>
+  <path d="m92 59-14 18h9l-2 12 15-20h-9l1-10Z" fill="#111416" stroke="#111416" stroke-linejoin="round"/>
+  <text x="127" y="79" fill="#F4F2ED" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="2">EV INSIGHTS</text>
+  <text x="68" y="155" fill="#F4F2ED" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="43" font-weight="650" letter-spacing="-1.7">Electric Vehicle Market</text>
+  <text x="68" y="207" fill="#AEB4B0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="40" font-weight="520" letter-spacing="-1.6">Performance &amp; Insights<tspan fill="#FF7042">.</tspan></text>
+  <rect x="70" y="235" width="7" height="7" rx="3.5" fill="#FF7042"/>
+  <text x="88" y="242" fill="#969D99" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1.7">LIVE TABLEAU DASHBOARD  /  STORY  /  REACT</text>
+  <g opacity=".9">
+    <rect x="827" y="95" width="310" height="139" rx="10" fill="#121718" stroke="#D8E1DB" stroke-opacity=".18"/>
+    <text x="850" y="122" fill="#AAB2AD" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.6">MARKET SIGNALS</text>
+    <text x="850" y="146" fill="#F0F1EA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="550">Electric mobility</text>
+    <path d="M850 204H1113M850 184H1113M850 164H1113" stroke="#E8EEE9" stroke-opacity=".1"/>
+    <path d="M861 202v-16h12v16m10 0v-29h12v29m10 0v-22h12v22m10 0v-37h12v37m10 0v-28h12v28m10 0v-44h12v44m10 0v-33h12v33m10 0v-50h12v50m10 0v-39h12v39m10 0v-27h12v27m10 0v-42h12v42m10 0v-32h12v32m10 0v-49h12v49m10 0v-36h12v36m10 0v-24h12v24" fill="#FF7042" fill-opacity=".73"/>
+    <path d="M861 181 893 179 925 184 957 171 989 174 1021 162 1053 168 1085 155 1113 160" stroke="#B6D7A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1113" cy="160" r="4" fill="#B6D7A2"/>
+  </g>
+  <circle cx="784" cy="78" r="4" fill="#8AB5D7"/>
+  <circle cx="1148" cy="74" r="3" fill="#B6D7A2"/>
+  <circle cx="772" cy="235" r="3" fill="#FF7042"/>
+</svg>

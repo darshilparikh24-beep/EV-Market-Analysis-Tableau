@@ -1,108 +1,114 @@
+<p align="center">
+  <img src="public/ev-insights-readme-banner.svg" alt="EV Insights — Electric Vehicle Market Performance & Insights" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://darshilparikh24-beep.github.io/EV-Market-Analysis-Tableau/">Live website</a>
+  &nbsp;·&nbsp;
+  <a href="https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/ElectricVehicleMarketPerformanceInsights">Tableau dashboard</a>
+  &nbsp;·&nbsp;
+  <a href="https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/EVMarketExecutiveStory">Tableau story</a>
+</p>
+
 # EV Insights
 
-**Electric Vehicle Market Performance & Insights** is a responsive React website for exploring the project's published Tableau dashboard and Tableau story. The site embeds the existing Tableau views and does not recreate them or generate replacement statistics.
+**Electric Vehicle Market Performance & Insights** is a responsive project site for exploring the published EV market dashboard and its companion Tableau story. A charcoal canvas, electric-orange highlights, and chart-inspired details carry the website’s visual theme into this project README.
 
-## Features
+## Live project
 
-- Dark, responsive analytics landing page with keyboard-friendly navigation.
-- Separate Dashboard and Story sections using the Tableau Embedding API v3.
-- Direct links to both published Tableau views.
-- Loading, slow-load, and error states for each embedded view.
-- Market analysis guide cards, project context, and methodology.
-- GitHub Pages deployment workflow with repository-aware Vite base paths.
-- No API keys, server, database, or paid hosting dependencies.
+| Explore | Open |
+| --- | --- |
+| EV Insights website | [Live site](https://darshilparikh24-beep.github.io/EV-Market-Analysis-Tableau/) |
+| Interactive Tableau dashboard | [Electric Vehicle Market Performance & Insights](https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/ElectricVehicleMarketPerformanceInsights) |
+| Tableau story | [EV Market Executive Story](https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/EVMarketExecutiveStory) |
+| Source repository | [EV-Market-Analysis-Tableau](https://github.com/darshilparikh24-beep/EV-Market-Analysis-Tableau) |
 
-## Tableau views
+## What you can explore
 
-The app reads its published view URLs from **src/config/tableau.js**.
+- **Dashboard:** use the published Tableau filters and views for category, manufacturer, region, battery technology, customer rating, range, and manufacturing locations.
+- **Story:** follow the executive story included in the published workbook.
+- **Analysis guide:** browse descriptions of analysis areas and questions to consider while using the views.
+- **Project method:** see how the workbook, story, site, and GitHub Pages deployment fit together.
 
-- Dashboard: https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/ElectricVehicleMarketPerformanceInsights
-- Story: https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/EVMarketExecutiveStory
+The site embeds the existing Tableau workbook; it does not redraw charts or invent market statistics. Explanatory cards describe what visitors can explore and are not additional dataset findings.
 
-If a view's published URL changes, update the corresponding **url** value in **src/config/tableau.js**. Tableau Public views are public; their own access and availability settings apply when embedded.
+## Design and accessibility
 
-## Data and accuracy
+The site uses a dark charcoal palette with electric-orange accents, muted green and blue chart details, responsive layouts, and lightweight motion. It includes semantic sections, keyboard focus styles, a skip link, mobile navigation, and reduced-motion support.
 
-The supplied Tableau workbook contains an embedded extract named **EV_Market_Data.hyper**. Its schema includes:
+## Technology
 
-vehicle_id, model_name, manufacturer, model_year, manufacturing_country, market_region, category, battery_capacity_kwh, battery_type, battery_cycle_life, battery_degradation_pct_5yr, range_km, efficiency_wh_per_km, motor_power_kw, torque_nm, num_motors, drivetrain, top_speed_kmph, acceleration_0_100_sec, max_dc_charging_kw, charging_dc_fast_time_min, charging_ac_time_hr, num_charging_ports, num_seats, weight_kg, cargo_capacity_liters, price_usd, insurance_cost_usd_yearly, warranty_years, resale_value_pct_3yr, safety_rating_stars, autonomous_level, infotainment_screen_inch, co2_saved_tons_per_year, annual_sales_units, customer_rating, and recommended_use_case.
+- React and JavaScript
+- Vite and custom responsive CSS
+- Tableau Embedding API v3
+- GitHub Actions and GitHub Pages
+- pnpm
 
-The website does not copy this extract into its own charts. Numeric findings are shown by the live Tableau dashboard; the explanatory cards on this site describe what visitors can explore and are not presented as additional measured results.
-
-## Project structure
-
-    ev-insights-site/
-    ├── .github/workflows/deploy.yml
-    ├── public/
-    │   ├── .nojekyll
-    │   └── favicon.svg
-    ├── src/
-    │   ├── components/
-    │   │   ├── About.jsx
-    │   │   ├── AnalyticsFeatures.jsx
-    │   │   ├── Dashboard.jsx
-    │   │   ├── Footer.jsx
-    │   │   ├── Hero.jsx
-    │   │   ├── Icon.jsx
-    │   │   ├── Methodology.jsx
-    │   │   ├── Navbar.jsx
-    │   │   ├── SectionIntro.jsx
-    │   │   ├── Story.jsx
-    │   │   ├── TableauEmbed.jsx
-    │   │   └── TechStack.jsx
-    │   ├── config/tableau.js
-    │   ├── App.jsx
-    │   ├── main.jsx
-    │   └── styles.css
-    ├── index.html
-    ├── package.json
-    ├── pnpm-lock.yaml
-    └── vite.config.js
+There is no Flask or database backend in this repository. GitHub Pages serves the static site; Tableau Public serves the interactive views.
 
 ## Run locally
 
-Requirements: Node.js 22.12 or newer and pnpm 11.25.0.
+**Requirements:** Node.js 22.12 or newer and pnpm 11.25.0.
 
-    pnpm install
-    pnpm dev
+~~~bash
+pnpm install
+pnpm dev
+~~~
 
-Open the local URL printed by Vite. Create and inspect a production build with:
+Open the local URL shown by Vite. To create and preview a production build:
 
-    pnpm build
-    pnpm preview
+~~~bash
+pnpm build
+pnpm preview
+~~~
 
-## Upload to GitHub
+## Tableau links
 
-The connected GitHub account has an empty repository named **darshilparikh24-beep/EV-Market-Analysis-Tableau**. The site is in a clean **ev-insights-site** folder, ready to upload to that repository. From this folder, run:
+Both view URLs are configured in **src/config/tableau.js**. The Story is the **EVMarketExecutiveStory** view in the published **EV_Market_Performance_Insights_Story_Final** workbook.
 
-    git init
-    git branch -M main
-    git remote add origin https://github.com/darshilparikh24-beep/EV-Market-Analysis-Tableau.git
-    git add .
-    git commit -m "Add EV Insights website"
-    git push -u origin main
+The Tableau views and embedded extract are public. Visitors need an internet connection to load them. If an embed cannot load, the site provides a direct link to Tableau Public.
 
-These commands create a local Git history and push the project to the empty remote. The remote has not been changed from this workspace. Do not commit Tableau credentials or other secrets.
+## Data notes
 
-## Enable GitHub Pages
+The published Tableau workbook contains an embedded **EV_Market_Data.hyper** extract. Its schema includes vehicle and market fields such as **manufacturer**, **model_year**, **manufacturing_country**, and **market_region**; vehicle measures such as **range_km**, **price_usd**, and **annual_sales_units**; and technical or experience measures such as **battery_capacity_kwh**, **battery_type**, **efficiency_wh_per_km**, and **customer_rating**.
 
-1. Push the project to the repository's **main** branch.
-2. In GitHub, open **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-4. Open the repository's **Actions** tab and confirm **Deploy EV Insights to GitHub Pages** completes.
-5. Open the URL reported by the deployment job. This repository's expected address is **https://darshilparikh24-beep.github.io/EV-Market-Analysis-Tableau/**.
+This website does not bundle a source CSV or create its own numerical analysis. Use the interactive Tableau views to inspect the workbook’s data and measures.
 
-The Vite configuration reads **GITHUB_REPOSITORY** in GitHub Actions and sets the correct base path automatically. The published site is live at **https://darshilparikh24-beep.github.io/EV-Market-Analysis-Tableau/**.
+## Project structure
 
-## Configure the repository link
+~~~text
+.
+├── .github/workflows/deploy.yml
+├── public/
+│   ├── .nojekyll
+│   ├── ev-insights-readme-banner.svg
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   ├── config/tableau.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── styles.css
+├── index.html
+├── package.json
+├── pnpm-lock.yaml
+└── vite.config.js
+~~~
 
-The workflow sets **VITE_GITHUB_REPO_URL** to this repository, so the footer links to the real project page. If you later move the project, update the environment value in **.github/workflows/deploy.yml**.
+## GitHub Pages deployment
 
-The **.env** file is ignored by Git. No secrets or Tableau credentials are needed.
+The **Deploy EV Insights to GitHub Pages** workflow builds on pushes to **main**, then publishes the **dist/** directory. Vite reads **GITHUB_REPOSITORY** to set the project-page asset paths.
 
-## Embedding notes and limitations
+For a new repository, choose **Settings → Pages → Build and deployment → GitHub Actions**. This project is live at:
 
-- Tableau's Embedding API v3 script is loaded from Tableau Public in **index.html** and uses Tableau's **tableau-viz** web component.
-- Visitors need network access to Tableau Public for embedded content to load. If embedding is unavailable, the status panel offers the direct published-view link.
-- GitHub Pages hosts only the static React site. It does not run a backend or store user data.
-- The website does not guarantee Tableau availability, permissions, or changes made to the published workbooks.
+**https://darshilparikh24-beep.github.io/EV-Market-Analysis-Tableau/**
+
+## Limitations
+
+- The interactive dashboard and story are hosted by Tableau Public and depend on its availability.
+- GitHub Pages serves static files; this site has no server-side processing or user accounts.
+- The repository does not include the workbook’s source CSV.
+
+## License
+
+No software or data license is declared in this repository yet. Check the Tableau workbook’s source-data terms before redistributing its extract.
