@@ -21,6 +21,7 @@
 | EV Insights website | [Live site](https://darshilparikh24-beep.github.io/EV-Market-Analysis-Tableau/) |
 | Interactive Tableau dashboard | [Electric Vehicle Market Performance & Insights](https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/ElectricVehicleMarketPerformanceInsights) |
 | Tableau story | [EV Market Executive Story](https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/EVMarketExecutiveStory) |
+| Project report | [Download the final project report (DOCX)](docs/EV_Market_Performance_Final_Report_Darshil_Parikh.docx) |
 | Source repository | [EV-Market-Analysis-Tableau](https://github.com/darshilparikh24-beep/EV-Market-Analysis-Tableau) |
 
 ## What you can explore
@@ -83,6 +84,8 @@ This website does not bundle a source CSV or create its own numerical analysis. 
 │   ├── .nojekyll
 │   ├── ev-insights-readme-banner.svg
 │   └── favicon.svg
+├── docs/
+│   └── EV_Market_Performance_Final_Report_Darshil_Parikh.docx
 ├── src/
 │   ├── components/
 │   ├── config/tableau.js
