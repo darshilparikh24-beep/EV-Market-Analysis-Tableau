@@ -16,8 +16,8 @@
 
 The app reads its published view URLs from **src/config/tableau.js**.
 
-- Dashboard: https://public.tableau.com/app/profile/darshil.parikh/viz/EV_Market_Performance_Insights_Story_Final/ElectricVehicleMarketPerformanceInsights
-- Story: https://public.tableau.com/app/profile/darshil.parikh/viz/EV_Market_Executive_Story_Public/EVMarketExecutiveStory
+- Dashboard: https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/ElectricVehicleMarketPerformanceInsights
+- Story: https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/EVMarketExecutiveStory
 
 If a view's published URL changes, update the corresponding **url** value in **src/config/tableau.js**. Tableau Public views are public; their own access and availability settings apply when embedded.
 

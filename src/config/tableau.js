@@ -2,15 +2,15 @@
 export const TABLEAU_VIEWS = {
   dashboard: {
     title: "Electric Vehicle Market Performance & Insights",
-    url: "https://public.tableau.com/app/profile/darshil.parikh/viz/EV_Market_Performance_Insights_Story_Final/ElectricVehicleMarketPerformanceInsights",
+    url: "https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/ElectricVehicleMarketPerformanceInsights",
     description:
       "Explore the published interactive dashboard, including market, manufacturer, battery, pricing and range views.",
   },
   story: {
     title: "EV Market Executive Story",
-    url: "https://public.tableau.com/app/profile/darshil.parikh/viz/EV_Market_Executive_Story_Public/EVMarketExecutiveStory",
+    url: "https://public.tableau.com/views/EV_Market_Performance_Insights_Story_Final/EVMarketExecutiveStory",
     description:
-      "Follow the published Tableau story through its executive overview and market analysis.",
+      "Follow the published executive story inside the EV market performance workbook.",
   },
 };
 
